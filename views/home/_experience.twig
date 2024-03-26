@@ -1,0 +1,13 @@
+<section class="projects" id="projets">
+	<h2>Projets</h2>
+	{# Une boucle for qui permet de parcourir un tableau pour pouvoir récupérer les éléments dont on a besoin et les afficher sur notre section #}
+	<div class="project-container">
+		{% for project in projects %}
+			<div class "project-item">
+				<a href="{{project.url}}"><img id="imageProject" src="/image/uploads/{{project.image}}" alt=""></a>
+				<a href="{{project.urlGit}}" class="github-link">url GitHub</a>
+			</div>
+		{% endfor %}
+	</div>
+
+</section

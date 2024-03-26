@@ -1,0 +1,75 @@
+#dashboardContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    
+    
+}
+#dashboardContainer h1{
+    color: blanchedalmond;
+}
+#dashboardContainer img{
+   max-width: 200px;
+    max-height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.project-list {
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.project-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:#2B3137;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.project-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.project-url, .project-url-git {
+    margin-bottom: 5px;
+    color: white;
+}
+.project-image {
+    margin-bottom: 5px;
+    color: white; 
+}
+
+.project-actions {
+    margin-top: 10px;
+}
+
+#projectContainer h2{
+    color:white;
+}
+
+a.delete-btn {
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.delete-btn:hover {
+    background-color: darkred;
+}
+
+a.update-btn {
+    color: white;
+    background-color: #E1CF1B;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a.update-btn:hover {
+    background-color: darkgoldenrod;
+}

@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    z-index: 1000;
+    background-color: rgba(20, 27, 35, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #4999A9;
+    transform: scale(1.1);
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #141B23;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+#bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    filter: opacity(3%);
+    z-index: -1;
+    object-fit: cover;
+}
+
+section.home h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 90px;
+    font-family: Roboto, sans serif;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+section.home p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.soleil {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, #df5a31, #ee7559, #FFCD72);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bougerSoleil 3s infinite alternate;
+    box-shadow: 0 0 10px 5px rgba(255, 205, 114, 0.5);
+    filter: brightness(1.5);
+    margin-left: 80px;
+}
+
+.soleil-ctn {
+    position: relative;
+    width: 100vw;
+    height: 0;
+}
+
+
+
+/**************************about**************/
+section.about {
+    color: white;
+    height: 50vh;
+    text-align: center;
+}
+
+.about p {
+    font-family: Roboto Mono, sans serif;
+}
+
+/******************************section compétences***/
+.competences {
+    color: white;
+    height: 80vh;
+
+}
+
+.competences h2 {
+    margin-bottom: 20px;
+    font-family: Roboto Mono, sans serif;
+
+}
+
+.competence h3 {
+    border-bottom: 2px solid blue;
+}
+
+.competences-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: Roboto Mono, sans serif;
+    line-height: 1.4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.competences h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+section.competences .competence {
+    width: 30%;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: left;
+}
+
+/******************************section expérience***/
+
+.projects {
+    color: white;
+    height: 100vh;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    font-family: Roboto Mono, sans serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+
+
+/******************************contact form***/
+#contact-ctn h2 {
+    color: white; 
+}
+
+
+.contact-ctn {
+    font-family: Roboto Mono, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+   
+}
+.formCtn h2{
+    color: aliceblue;
+    font-family: Roboto Mono, sans-serif;
+
+}
+.formCtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: #141B23; 
+}
+
+.loginForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+form {
+
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/*************projectForm***/
+
+
+.project-section {
+    text-align: center;
+    margin: 50px;
+}
+
+.project-section h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.project-section div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden{
+    display: none;
+}
+
+.projects {
+    width: 100%; 
+    padding: 20px;
+    padding: 0;
+    margin: 0
+}
+.project-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+
+#imageProject{
+    width:300px;
+    height: 300px;
+    box-shadow: #141B23;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.project-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.github-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #847e7e; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+
+
+.icones-ctn{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap:20px
+}
+.icones-ctn img {
+    float: left;
+    width: 80px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+
+
+@keyframes bougerSoleil {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
